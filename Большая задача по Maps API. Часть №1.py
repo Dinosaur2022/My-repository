@@ -101,7 +101,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
     def push(self):
         try:
             x = float(self.TextX.text()) % 360
-            y = float(self.TextY.text()) % 360
+            y = float(self.TextY.text()) % 90
             scale = float(self.TextScale.text())
             if scale > 90:
                 scale = 90
